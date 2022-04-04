@@ -14,8 +14,8 @@ provider "aws" {
 resource "aws_instance" "ebs_optimized" {
   ami           = var.ami_id
   instance_type = var.type
-  #ebs_optimized = false
-  #monitoring = false
+  ebs_optimized = false
+  monitoring = false
   tags = {
     Name = "ExampleAppServerInstance"
   }
