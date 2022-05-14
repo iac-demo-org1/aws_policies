@@ -10,6 +10,7 @@ terraform {
 resource "aws_s3_bucket" "mfadelete" {
   bucket = "examplebuckettftest"
   acl    = var.public
+  
   versioning {
     mfa_delete = "false"
     enabled = "false"
