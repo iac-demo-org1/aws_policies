@@ -1,6 +1,7 @@
 ##########################
 # Security group with name
 ##########################
+
 resource "aws_security_group" "sg" {
 
   ingress {
